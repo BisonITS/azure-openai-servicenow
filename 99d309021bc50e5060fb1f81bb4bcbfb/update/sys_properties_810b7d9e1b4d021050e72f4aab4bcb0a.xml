@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties">
+    <sys_properties action="INSERT_OR_UPDATE">
+        <choices/>
+        <description/>
+        <ignore_cache>true</ignore_cache>
+        <is_private>false</is_private>
+        <name>x_bits2_az_openai.api_version</name>
+        <read_roles/>
+        <suffix>x_bits2_az_openai.api_version</suffix>
+        <sys_class_name>sys_properties</sys_class_name>
+        <sys_created_by>csa-jesse.szepieniec@bithawk.ch</sys_created_by>
+        <sys_created_on>2024-03-22 06:15:39</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>810b7d9e1b4d021050e72f4aab4bcb0a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>x_bits2_az_openai.api_version</sys_name>
+        <sys_package display_value="Azure Open AI" source="x_bits2_az_openai">99d309021bc50e5060fb1f81bb4bcbfb</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Azure Open AI">99d309021bc50e5060fb1f81bb4bcbfb</sys_scope>
+        <sys_update_name>sys_properties_810b7d9e1b4d021050e72f4aab4bcb0a</sys_update_name>
+        <sys_updated_by>csa-jesse.szepieniec@bithawk.ch</sys_updated_by>
+        <sys_updated_on>2024-03-22 08:03:29</sys_updated_on>
+        <type>string</type>
+        <value/>
+        <write_roles/>
+    </sys_properties>
+    <sys_translated_text action="delete_multiple" query="documentkey=810b7d9e1b4d021050e72f4aab4bcb0a"/>
+</record_update>

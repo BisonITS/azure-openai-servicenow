@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_bits2_az_openai.AzureOpenAI</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>AzureOpenAI</name>
+        <script><![CDATA[var AzureOpenAI = Class.create();
+AzureOpenAI.prototype = {
+	type: 'AzureOpenAI',
+
+	context: '',
+
+	AZURE_OPENAI_API_KEY: '',
+	AZURE_OPENAI_API_ENDPOINT: '',
+	AZURE_OPENAI_DEPLOYMENT: '',
+	AZURE_OPENAI_API_VERSION: '',
+
+	REST_MESSAGE: 'x_bits2_az_openai.Azure OpenAI',
+	REST_MESSAGE_FN_CHAT_COMPLETION: 'Chat Completion',
+
+	initialize: function () {
+		this.AZURE_OPENAI_API_KEY = gs.getProperty('x_bits2_az_openai.api_key');
+		this.AZURE_OPENAI_API_ENDPOINT = gs.getProperty('x_bits2_az_openai.api_endpoint');
+		this.AZURE_OPENAI_DEPLOYMENT = gs.getProperty('x_bits2_az_openai.deployment');
+		this.AZURE_OPENAI_API_VERSION = gs.getProperty('x_bits2_az_openai.api_version');
+	},
+
+	prompt: function (prompt) {
+		try {
+			var r = new sn_ws.RESTMessageV2(
+				this.REST_MESSAGE,
+				this.REST_MESSAGE_FN_CHAT_COMPLETION
+			);
+
+			r.setStringParameterNoEscape('endpoint', this.AZURE_OPENAI_API_ENDPOINT);
+			r.setStringParameterNoEscape('apiVersion', this.AZURE_OPENAI_API_VERSION);
+			r.setStringParameterNoEscape('apiKey', this.AZURE_OPENAI_API_KEY);
+			r.setStringParameterNoEscape('deployment', this.AZURE_OPENAI_DEPLOYMENT);
+
+			r.setStringParameterNoEscape('role', 'user');
+
+			var content = this.context + '\n' + prompt;
+
+			r.setStringParameterNoEscape('content', this._escapeNewLines(content));
+
+			var response = r.execute();
+			var responseBody = response.getBody();
+
+			var parsedResponse = JSON.parse(responseBody);
+			var messageContent = '';
+			if (
+				parsedResponse.choices &&
+				parsedResponse.choices.length > 0 &&
+				parsedResponse.choices[0].message &&
+				parsedResponse.choices[0].message.content
+			) {
+				messageContent = parsedResponse.choices[0].message.content;
+			}
+
+			return messageContent;
+		} catch (ex) {
+			gs.info(ex.message);
+		}
+	},
+
+	_escapeNewLines(str) {
+		return GlideStringUtil.escapeNonPrintable(str);
+	},
+
+	setContext: function (context) {
+		this.context = context;
+	},
+
+	getContext: function () {
+		return this.context;
+	}
+};
+]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>csa-jesse.szepieniec@bithawk.ch</sys_created_by>
+        <sys_created_on>2024-03-22 05:12:09</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>85cc65521b0d021050e72f4aab4bcb76</sys_id>
+        <sys_mod_count>28</sys_mod_count>
+        <sys_name>AzureOpenAI</sys_name>
+        <sys_package display_value="Azure Open AI" source="x_bits2_az_openai">99d309021bc50e5060fb1f81bb4bcbfb</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Azure Open AI">99d309021bc50e5060fb1f81bb4bcbfb</sys_scope>
+        <sys_update_name>sys_script_include_85cc65521b0d021050e72f4aab4bcb76</sys_update_name>
+        <sys_updated_by>csa-jesse.szepieniec@bithawk.ch</sys_updated_by>
+        <sys_updated_on>2024-03-22 07:47:14</sys_updated_on>
+    </sys_script_include>
+</record_update>

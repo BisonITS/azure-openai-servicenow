@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn_parameters">
+    <sys_rest_message_fn_parameters action="DELETE">
+        <name>endpoint</name>
+        <rest_message_function display_value="Chat Completion">28667d961b4d021050e72f4aab4bcbb8</rest_message_function>
+        <sys_class_name>sys_rest_message_fn_parameters</sys_class_name>
+        <sys_created_by>csa-jesse.szepieniec@bithawk.ch</sys_created_by>
+        <sys_created_on>2024-03-22 06:10:06</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>981a3d1e1b4d021050e72f4aab4bcb64</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>endpoint</sys_name>
+        <sys_package display_value="Azure Open AI" source="x_bits2_az_openai">99d309021bc50e5060fb1f81bb4bcbfb</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Azure Open AI">99d309021bc50e5060fb1f81bb4bcbfb</sys_scope>
+        <sys_update_name>sys_rest_message_fn_parameters_981a3d1e1b4d021050e72f4aab4bcb64</sys_update_name>
+        <sys_updated_by>csa-jesse.szepieniec@bithawk.ch</sys_updated_by>
+        <sys_updated_on>2024-03-22 06:17:58</sys_updated_on>
+        <type>string</type>
+        <value>https://trialerror-ai-servicedesk.openai.azure.com/</value>
+    </sys_rest_message_fn_parameters>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Azure Open AI">99d309021bc50e5060fb1f81bb4bcbfb</application>
+        <file_path/>
+        <instance_id>ce26a1db71519d0070acab22d3494763</instance_id>
+        <instance_name>bithawkdev</instance_name>
+        <name>sys_rest_message_fn_parameters_981a3d1e1b4d021050e72f4aab4bcb64</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn_parameters"><sys_rest_message_fn_parameters action="INSERT_OR_UPDATE"><name>endpoint</name><rest_message_function display_value="Chat Completion">28667d961b4d021050e72f4aab4bcbb8</rest_message_function><sys_class_name>sys_rest_message_fn_parameters</sys_class_name><sys_created_by>csa-jesse.szepieniec@bithawk.ch</sys_created_by><sys_created_on>2024-03-22 06:10:06</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>981a3d1e1b4d021050e72f4aab4bcb64</sys_id><sys_mod_count>4</sys_mod_count><sys_name>endpoint</sys_name><sys_package display_value="Azure Open AI" source="x_bits2_az_openai">99d309021bc50e5060fb1f81bb4bcbfb</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Azure Open AI">99d309021bc50e5060fb1f81bb4bcbfb</sys_scope><sys_update_name>sys_rest_message_fn_parameters_981a3d1e1b4d021050e72f4aab4bcb64</sys_update_name><sys_updated_by>csa-jesse.szepieniec@bithawk.ch</sys_updated_by><sys_updated_on>2024-03-22 06:17:58</sys_updated_on><type>string</type><value>https://trialerror-ai-servicedesk.openai.azure.com/</value></sys_rest_message_fn_parameters></record_update>]]></payload>
+        <payload_hash>304150614</payload_hash>
+        <record_name>endpoint</record_name>
+        <reverted_from/>
+        <source>95d309821bc50e5060fb1f81bb4bcbd2</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>csa-jesse.szepieniec@bithawk.ch</sys_created_by>
+        <sys_created_on>2024-03-22 06:17:58</sys_created_on>
+        <sys_id>e3dbb9921b8d021050e72f4aab4bcbf2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18e64cf1ca20000001</sys_recorded_at>
+        <sys_updated_by>csa-jesse.szepieniec@bithawk.ch</sys_updated_by>
+        <sys_updated_on>2024-03-22 06:17:58</sys_updated_on>
+        <type>Variable Substitutions</type>
+        <update_guid>6bdbb992f38d0210d21e2d300c28a8f1</update_guid>
+        <update_guid_history>6bdbb992f38d0210d21e2d300c28a8f1:304150614,3cdb7992ba8d0210077d2344135a353f:1239506626,948bb552878d0210adad825ed9aa0d37:1930077599,3b3a7d9e584d02104aaceb3425639f06:254502538,d81a3d9e034d021014bb77bc0e1b67c1:-2042891079</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>csa-jesse.szepieniec@bithawk.ch</sys_created_by>
+        <sys_created_on>2024-03-25 08:09:32</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sys_rest_message_fn_parameters">sys_rest_message_fn_parameters</sys_db_object>
+        <sys_id>026ec79a8c914ed48d310fb89c2fda71</sys_id>
+        <sys_metadata>981a3d1e1b4d021050e72f4aab4bcb64</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>endpoint</sys_name>
+        <sys_package display_value="Azure Open AI" source="x_bits2_az_openai">99d309021bc50e5060fb1f81bb4bcbfb</sys_package>
+        <sys_parent display_value="Chat Completion">28667d961b4d021050e72f4aab4bcbb8</sys_parent>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Azure Open AI">99d309021bc50e5060fb1f81bb4bcbfb</sys_scope>
+        <sys_scope_delete display_value="">5861b4c960334856b68a65bb178c16b9</sys_scope_delete>
+        <sys_update_name>sys_rest_message_fn_parameters_981a3d1e1b4d021050e72f4aab4bcb64</sys_update_name>
+        <sys_update_version display_value="sys_rest_message_fn_parameters_981a3d1e1b4d021050e72f4aab4bcb64">e3dbb9921b8d021050e72f4aab4bcbf2</sys_update_version>
+        <sys_updated_by>csa-jesse.szepieniec@bithawk.ch</sys_updated_by>
+        <sys_updated_on>2024-03-25 08:09:32</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

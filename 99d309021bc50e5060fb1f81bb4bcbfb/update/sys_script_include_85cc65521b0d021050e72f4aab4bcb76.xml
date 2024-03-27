@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
     <sys_script_include action="INSERT_OR_UPDATE">
-        <access>package_private</access>
+        <access>public</access>
         <active>true</active>
         <api_name>x_bits2_az_openai.AzureOpenAI</api_name>
         <caller_access/>
@@ -11,21 +11,57 @@
 AzureOpenAI.prototype = {
 	type: 'AzureOpenAI',
 
-	context: '',
+	messages: [],
 
 	AZURE_OPENAI_API_KEY: '',
 	AZURE_OPENAI_API_ENDPOINT: '',
-	AZURE_OPENAI_DEPLOYMENT: '',
 	AZURE_OPENAI_API_VERSION: '',
+	AZURE_OPENAI_DEPLOYMENT_ID: '',
+
+	ROLES: {
+		USER: 'user',
+		ASSISTANT: 'assistant',
+		SYSTEM: 'system'
+	},
 
 	REST_MESSAGE: 'x_bits2_az_openai.Azure OpenAI',
-	REST_MESSAGE_FN_CHAT_COMPLETION: 'Chat Completion',
+	REST_MESSAGE_FN_CHAT_COMPLETION: 'Chat Completions',
+
+	MAX_TOKENS: 800,
+	TEMPERATURE: 0.5,
+	TOP_P: 0.95,
+	FREQUENCY_PENALTY: 0,
+	PRESENCE_PENALTY: 0,
+	STOP: null,
 
 	initialize: function () {
 		this.AZURE_OPENAI_API_KEY = gs.getProperty('azure_openai.api_key');
-		this.AZURE_OPENAI_API_ENDPOINT = gs.getProperty('azure_openai.api_endpoint');
-		this.AZURE_OPENAI_DEPLOYMENT = gs.getProperty('azure_openai.deployment');
 		this.AZURE_OPENAI_API_VERSION = gs.getProperty('azure_openai.api_version');
+		this.AZURE_OPENAI_API_ENDPOINT = gs.getProperty('azure_openai.api_endpoint');
+		this.AZURE_OPENAI_DEPLOYMENT_ID = gs.getProperty('azure_openai.deployment_id');
+	},
+
+	/**
+	 * Message object for chat context
+	 * @typedef {Object} Message
+	 * @property {string} role - The role of the message sender (e.g., 'user', 'assistant').
+	 * @property {string} content - The content of the message.
+	 */
+
+	/**
+	 * Add a message to the context
+	 * @param {Message} prompt
+	 * @returns {void}
+	 */
+	addToContext: function (message) {
+		this.messages.push(message);
+	},
+
+	_createMessage: function (role, content) {
+		return {
+			role: role,
+			content: this._escapeNewLines(content)
+		};
 	},
 
 	prompt: function (prompt) {
@@ -35,16 +71,21 @@ AzureOpenAI.prototype = {
 				this.REST_MESSAGE_FN_CHAT_COMPLETION
 			);
 
-			r.setStringParameterNoEscape('endpoint', this.AZURE_OPENAI_API_ENDPOINT);
 			r.setStringParameterNoEscape('apiVersion', this.AZURE_OPENAI_API_VERSION);
 			r.setStringParameterNoEscape('apiKey', this.AZURE_OPENAI_API_KEY);
-			r.setStringParameterNoEscape('deployment', this.AZURE_OPENAI_DEPLOYMENT);
+			r.setStringParameterNoEscape('apiEndpoint', this.AZURE_OPENAI_API_ENDPOINT);
+			r.setStringParameterNoEscape('deploymentId', this.AZURE_OPENAI_DEPLOYMENT_ID);
 
-			r.setStringParameterNoEscape('role', 'user');
+			r.setStringParameterNoEscape('maxTokens', this.MAX_TOKENS);
+			r.setStringParameterNoEscape('temperature', this.TEMPERATURE);
+			r.setStringParameterNoEscape('topP', this.TOP_P);
+			r.setStringParameterNoEscape('frequencyPenalty', this.FREQUENCY_PENALTY);
+			r.setStringParameterNoEscape('presencePenalty', this.PRESENCE_PENALTY);
+			r.setStringParameterNoEscape('stop', this.STOP);
 
-			var content = this.context + '\n' + prompt;
+			this.addToContext(this._createMessage(this.ROLES.USER, prompt));
 
-			r.setStringParameterNoEscape('content', this._escapeNewLines(content));
+			r.setStringParameterNoEscape('messages', JSON.stringify(this.messages));
 
 			var response = r.execute();
 			var responseBody = response.getBody();
@@ -75,7 +116,7 @@ AzureOpenAI.prototype = {
 	},
 
 	getContext: function () {
-		return this.context;
+		return this.messages;
 	}
 };
 ]]></script>
@@ -84,7 +125,7 @@ AzureOpenAI.prototype = {
         <sys_created_on>2024-03-22 05:12:09</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>85cc65521b0d021050e72f4aab4bcb76</sys_id>
-        <sys_mod_count>29</sys_mod_count>
+        <sys_mod_count>60</sys_mod_count>
         <sys_name>AzureOpenAI</sys_name>
         <sys_package display_value="Azure Open AI" source="x_bits2_az_openai">99d309021bc50e5060fb1f81bb4bcbfb</sys_package>
         <sys_policy>read</sys_policy>
@@ -92,6 +133,6 @@ AzureOpenAI.prototype = {
         <sys_scope display_value="Azure Open AI">99d309021bc50e5060fb1f81bb4bcbfb</sys_scope>
         <sys_update_name>sys_script_include_85cc65521b0d021050e72f4aab4bcb76</sys_update_name>
         <sys_updated_by>csa-jesse.szepieniec@bithawk.ch</sys_updated_by>
-        <sys_updated_on>2024-03-22 08:38:47</sys_updated_on>
+        <sys_updated_on>2024-03-27 06:28:06</sys_updated_on>
     </sys_script_include>
 </record_update>

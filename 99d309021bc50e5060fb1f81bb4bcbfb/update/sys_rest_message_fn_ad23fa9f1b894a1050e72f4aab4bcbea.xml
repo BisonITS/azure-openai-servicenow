@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn">
+    <sys_rest_message_fn action="INSERT_OR_UPDATE">
+        <authentication_type>inherit_from_parent</authentication_type>
+        <basic_auth_password/>
+        <basic_auth_profile/>
+        <basic_auth_user/>
+        <content>{
+    "messages": ${messages},
+    "temperature": ${temperature},
+    "top_p": ${topP},
+    "frequency_penalty": ${frequencyPenalty},
+    "presence_penalty": ${presencePenalty},
+    "max_tokens": ${maxTokens},
+    "stop": ${stop}
+  }</content>
+        <function_name>Chat Completions</function_name>
+        <http_method>post</http_method>
+        <lock>false</lock>
+        <oauth2_profile/>
+        <protocol_name/>
+        <qualified_name>Azure OpenAI [ Chat Completions ]</qualified_name>
+        <rest_endpoint>${apiEndpoint}/openai/deployments/${deploymentId}/chat/completions?api-version=${apiVersion}</rest_endpoint>
+        <rest_message display_value="Azure OpenAI">add5f5561b4d021050e72f4aab4bcb72</rest_message>
+        <sys_class_name>sys_rest_message_fn</sys_class_name>
+        <sys_created_by>csa-jesse.szepieniec@bithawk.ch</sys_created_by>
+        <sys_created_on>2024-03-25 13:26:42</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>ad23fa9f1b894a1050e72f4aab4bcbea</sys_id>
+        <sys_mod_count>26</sys_mod_count>
+        <sys_name>Chat Completions</sys_name>
+        <sys_package display_value="Azure Open AI" source="x_bits2_az_openai">99d309021bc50e5060fb1f81bb4bcbfb</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Azure Open AI">99d309021bc50e5060fb1f81bb4bcbfb</sys_scope>
+        <sys_update_name>sys_rest_message_fn_ad23fa9f1b894a1050e72f4aab4bcbea</sys_update_name>
+        <sys_updated_by>csa-jesse.szepieniec@bithawk.ch</sys_updated_by>
+        <sys_updated_on>2024-03-27 06:22:54</sys_updated_on>
+        <use_basic_auth>false</use_basic_auth>
+        <use_mid_server/>
+        <use_mutual_auth>false</use_mutual_auth>
+    </sys_rest_message_fn>
+</record_update>

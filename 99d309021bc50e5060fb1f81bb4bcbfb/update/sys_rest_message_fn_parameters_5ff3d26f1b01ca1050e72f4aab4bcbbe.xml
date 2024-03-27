@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn_parameters">
+    <sys_rest_message_fn_parameters action="INSERT_OR_UPDATE">
+        <name>deploymentId</name>
+        <rest_message_function display_value="Chat Completions">ad23fa9f1b894a1050e72f4aab4bcbea</rest_message_function>
+        <sys_class_name>sys_rest_message_fn_parameters</sys_class_name>
+        <sys_created_by>csa-jesse.szepieniec@bithawk.ch</sys_created_by>
+        <sys_created_on>2024-03-26 05:15:47</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>5ff3d26f1b01ca1050e72f4aab4bcbbe</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>deploymentId</sys_name>
+        <sys_package display_value="Azure Open AI" source="x_bits2_az_openai">99d309021bc50e5060fb1f81bb4bcbfb</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Azure Open AI">99d309021bc50e5060fb1f81bb4bcbfb</sys_scope>
+        <sys_update_name>sys_rest_message_fn_parameters_5ff3d26f1b01ca1050e72f4aab4bcbbe</sys_update_name>
+        <sys_updated_by>csa-jesse.szepieniec@bithawk.ch</sys_updated_by>
+        <sys_updated_on>2024-03-26 05:15:47</sys_updated_on>
+        <type>string</type>
+        <value/>
+    </sys_rest_message_fn_parameters>
+</record_update>

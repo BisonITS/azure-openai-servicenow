@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn_parameters">
+    <sys_rest_message_fn_parameters action="DELETE">
+        <name>maxTokens</name>
+        <rest_message_function display_value="Chat Completion">ad23fa9f1b894a1050e72f4aab4bcbea</rest_message_function>
+        <sys_class_name>sys_rest_message_fn_parameters</sys_class_name>
+        <sys_created_by>csa-jesse.szepieniec@bithawk.ch</sys_created_by>
+        <sys_created_on>2024-03-25 14:34:38</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>485a87d31b4d4a1050e72f4aab4bcbf4</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>maxTokens</sys_name>
+        <sys_package display_value="Azure Open AI" source="x_bits2_az_openai">99d309021bc50e5060fb1f81bb4bcbfb</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Azure Open AI">99d309021bc50e5060fb1f81bb4bcbfb</sys_scope>
+        <sys_update_name>sys_rest_message_fn_parameters_485a87d31b4d4a1050e72f4aab4bcbf4</sys_update_name>
+        <sys_updated_by>csa-jesse.szepieniec@bithawk.ch</sys_updated_by>
+        <sys_updated_on>2024-03-25 14:57:42</sys_updated_on>
+        <type>string</type>
+        <value>80</value>
+    </sys_rest_message_fn_parameters>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Azure Open AI">99d309021bc50e5060fb1f81bb4bcbfb</application>
+        <file_path/>
+        <instance_id>ce26a1db71519d0070acab22d3494763</instance_id>
+        <instance_name>bithawkdev</instance_name>
+        <name>sys_rest_message_fn_parameters_485a87d31b4d4a1050e72f4aab4bcbf4</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn_parameters"><sys_rest_message_fn_parameters action="INSERT_OR_UPDATE"><name>maxTokens</name><rest_message_function display_value="Chat Completion">ad23fa9f1b894a1050e72f4aab4bcbea</rest_message_function><sys_class_name>sys_rest_message_fn_parameters</sys_class_name><sys_created_by>csa-jesse.szepieniec@bithawk.ch</sys_created_by><sys_created_on>2024-03-25 14:34:38</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>485a87d31b4d4a1050e72f4aab4bcbf4</sys_id><sys_mod_count>2</sys_mod_count><sys_name>maxTokens</sys_name><sys_package display_value="Azure Open AI" source="x_bits2_az_openai">99d309021bc50e5060fb1f81bb4bcbfb</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Azure Open AI">99d309021bc50e5060fb1f81bb4bcbfb</sys_scope><sys_update_name>sys_rest_message_fn_parameters_485a87d31b4d4a1050e72f4aab4bcbf4</sys_update_name><sys_updated_by>csa-jesse.szepieniec@bithawk.ch</sys_updated_by><sys_updated_on>2024-03-25 14:57:42</sys_updated_on><type>string</type><value>80</value></sys_rest_message_fn_parameters></record_update>]]></payload>
+        <payload_hash>-1439577458</payload_hash>
+        <record_name>maxTokens</record_name>
+        <reverted_from/>
+        <source>121faed71b894a1050e72f4aab4bcb85</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>csa-jesse.szepieniec@bithawk.ch</sys_created_by>
+        <sys_created_on>2024-03-25 14:57:42</sys_created_on>
+        <sys_id>759f831f1b4d4a1050e72f4aab4bcb1e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18e761e03300000001</sys_recorded_at>
+        <sys_updated_by>csa-jesse.szepieniec@bithawk.ch</sys_updated_by>
+        <sys_updated_on>2024-03-25 14:57:42</sys_updated_on>
+        <type>Variable Substitutions</type>
+        <update_guid>bd9f831bd04d4a10b0f5994f259992f4</update_guid>
+        <update_guid_history>bd9f831bd04d4a10b0f5994f259992f4:-1439577458,6e8b8757774d4a10c5a16fcfddc13700:-2100839423,cc5a87d3e34d4a107373fb3dffd9c2f5:-2069013545</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>csa-jesse.szepieniec@bithawk.ch</sys_created_by>
+        <sys_created_on>2024-03-25 15:00:42</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sys_rest_message_fn_parameters">sys_rest_message_fn_parameters</sys_db_object>
+        <sys_id>d6319288ba1e4525aa9070fdcc5614c9</sys_id>
+        <sys_metadata>485a87d31b4d4a1050e72f4aab4bcbf4</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>maxTokens</sys_name>
+        <sys_package display_value="Azure Open AI" source="x_bits2_az_openai">99d309021bc50e5060fb1f81bb4bcbfb</sys_package>
+        <sys_parent display_value="Chat Completions">ad23fa9f1b894a1050e72f4aab4bcbea</sys_parent>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Azure Open AI">99d309021bc50e5060fb1f81bb4bcbfb</sys_scope>
+        <sys_scope_delete display_value="">5861b4c960334856b68a65bb178c16b9</sys_scope_delete>
+        <sys_update_name>sys_rest_message_fn_parameters_485a87d31b4d4a1050e72f4aab4bcbf4</sys_update_name>
+        <sys_update_version display_value="sys_rest_message_fn_parameters_485a87d31b4d4a1050e72f4aab4bcbf4">759f831f1b4d4a1050e72f4aab4bcb1e</sys_update_version>
+        <sys_updated_by>csa-jesse.szepieniec@bithawk.ch</sys_updated_by>
+        <sys_updated_on>2024-03-25 15:00:42</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

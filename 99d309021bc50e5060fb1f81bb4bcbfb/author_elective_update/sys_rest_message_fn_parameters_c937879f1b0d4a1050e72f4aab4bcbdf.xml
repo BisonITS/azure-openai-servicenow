@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn_parameters">
+    <sys_rest_message_fn_parameters action="DELETE">
+        <name>prompt</name>
+        <rest_message_function display_value="Chat Completion">ad23fa9f1b894a1050e72f4aab4bcbea</rest_message_function>
+        <sys_class_name>sys_rest_message_fn_parameters</sys_class_name>
+        <sys_created_by>csa-jesse.szepieniec@bithawk.ch</sys_created_by>
+        <sys_created_on>2024-03-25 14:21:03</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>c937879f1b0d4a1050e72f4aab4bcbdf</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>prompt</sys_name>
+        <sys_package display_value="Azure Open AI" source="x_bits2_az_openai">99d309021bc50e5060fb1f81bb4bcbfb</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Azure Open AI">99d309021bc50e5060fb1f81bb4bcbfb</sys_scope>
+        <sys_update_name>sys_rest_message_fn_parameters_c937879f1b0d4a1050e72f4aab4bcbdf</sys_update_name>
+        <sys_updated_by>csa-jesse.szepieniec@bithawk.ch</sys_updated_by>
+        <sys_updated_on>2024-03-25 14:40:53</sys_updated_on>
+        <type>string</type>
+        <value>How can I convert an integer to a string in js?</value>
+    </sys_rest_message_fn_parameters>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Azure Open AI">99d309021bc50e5060fb1f81bb4bcbfb</application>
+        <file_path/>
+        <instance_id>ce26a1db71519d0070acab22d3494763</instance_id>
+        <instance_name>bithawkdev</instance_name>
+        <name>sys_rest_message_fn_parameters_c937879f1b0d4a1050e72f4aab4bcbdf</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn_parameters"><sys_rest_message_fn_parameters action="INSERT_OR_UPDATE"><name>prompt</name><rest_message_function display_value="Chat Completion">ad23fa9f1b894a1050e72f4aab4bcbea</rest_message_function><sys_class_name>sys_rest_message_fn_parameters</sys_class_name><sys_created_by>csa-jesse.szepieniec@bithawk.ch</sys_created_by><sys_created_on>2024-03-25 14:21:03</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>c937879f1b0d4a1050e72f4aab4bcbdf</sys_id><sys_mod_count>4</sys_mod_count><sys_name>prompt</sys_name><sys_package display_value="Azure Open AI" source="x_bits2_az_openai">99d309021bc50e5060fb1f81bb4bcbfb</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Azure Open AI">99d309021bc50e5060fb1f81bb4bcbfb</sys_scope><sys_update_name>sys_rest_message_fn_parameters_c937879f1b0d4a1050e72f4aab4bcbdf</sys_update_name><sys_updated_by>csa-jesse.szepieniec@bithawk.ch</sys_updated_by><sys_updated_on>2024-03-25 14:40:53</sys_updated_on><type>string</type><value>How can I convert an integer to a string in js?</value></sys_rest_message_fn_parameters></record_update>]]></payload>
+        <payload_hash>-502353587</payload_hash>
+        <record_name>prompt</record_name>
+        <reverted_from/>
+        <source>121faed71b894a1050e72f4aab4bcb85</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>csa-jesse.szepieniec@bithawk.ch</sys_created_by>
+        <sys_created_on>2024-03-25 14:40:53</sys_created_on>
+        <sys_id>abbb83571b4d4a1050e72f4aab4bcb46</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18e760e9eba0000001</sys_recorded_at>
+        <sys_updated_by>csa-jesse.szepieniec@bithawk.ch</sys_updated_by>
+        <sys_updated_on>2024-03-25 14:40:53</sys_updated_on>
+        <type>Variable Substitutions</type>
+        <update_guid>efbb8357db4d4a1053f05144b9c4a245</update_guid>
+        <update_guid_history>efbb8357db4d4a1053f05144b9c4a245:-502353587,4ae787dfd40d4a10ab2b040e5d2c7e5a:271101216,6ab78bdf050d4a1030976a707e7c15e0:603145538,1a77cf9fc00d4a107da9cc0b3a40d022:-697782112,4537879fbc0d4a10e5fed9e2bb7d5ce2:1957397463</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>csa-jesse.szepieniec@bithawk.ch</sys_created_by>
+        <sys_created_on>2024-03-25 14:49:23</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sys_rest_message_fn_parameters">sys_rest_message_fn_parameters</sys_db_object>
+        <sys_id>4f2d7288f4cf4a24892b7067510fe690</sys_id>
+        <sys_metadata>c937879f1b0d4a1050e72f4aab4bcbdf</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>prompt</sys_name>
+        <sys_package display_value="Azure Open AI" source="x_bits2_az_openai">99d309021bc50e5060fb1f81bb4bcbfb</sys_package>
+        <sys_parent display_value="Chat Completions">ad23fa9f1b894a1050e72f4aab4bcbea</sys_parent>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Azure Open AI">99d309021bc50e5060fb1f81bb4bcbfb</sys_scope>
+        <sys_scope_delete display_value="">5861b4c960334856b68a65bb178c16b9</sys_scope_delete>
+        <sys_update_name>sys_rest_message_fn_parameters_c937879f1b0d4a1050e72f4aab4bcbdf</sys_update_name>
+        <sys_update_version display_value="sys_rest_message_fn_parameters_c937879f1b0d4a1050e72f4aab4bcbdf">abbb83571b4d4a1050e72f4aab4bcb46</sys_update_version>
+        <sys_updated_by>csa-jesse.szepieniec@bithawk.ch</sys_updated_by>
+        <sys_updated_on>2024-03-25 14:49:23</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

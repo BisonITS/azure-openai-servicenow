@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn_parameters">
+    <sys_rest_message_fn_parameters action="DELETE">
+        <name>topP</name>
+        <rest_message_function display_value="Chat Completion">ad23fa9f1b894a1050e72f4aab4bcbea</rest_message_function>
+        <sys_class_name>sys_rest_message_fn_parameters</sys_class_name>
+        <sys_created_by>csa-jesse.szepieniec@bithawk.ch</sys_created_by>
+        <sys_created_on>2024-03-25 17:51:30</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>b7577f971b418a1050e72f4aab4bcb32</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>topP</sys_name>
+        <sys_package display_value="Azure Open AI" source="x_bits2_az_openai">99d309021bc50e5060fb1f81bb4bcbfb</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Azure Open AI">99d309021bc50e5060fb1f81bb4bcbfb</sys_scope>
+        <sys_update_name>sys_rest_message_fn_parameters_b7577f971b418a1050e72f4aab4bcb32</sys_update_name>
+        <sys_updated_by>csa-jesse.szepieniec@bithawk.ch</sys_updated_by>
+        <sys_updated_on>2024-03-25 17:52:57</sys_updated_on>
+        <type>string</type>
+        <value>0.95</value>
+    </sys_rest_message_fn_parameters>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Azure Open AI">99d309021bc50e5060fb1f81bb4bcbfb</application>
+        <file_path/>
+        <instance_id>ce26a1db71519d0070acab22d3494763</instance_id>
+        <instance_name>bithawkdev</instance_name>
+        <name>sys_rest_message_fn_parameters_b7577f971b418a1050e72f4aab4bcb32</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn_parameters"><sys_rest_message_fn_parameters action="INSERT_OR_UPDATE"><name>topP</name><rest_message_function display_value="Chat Completion">ad23fa9f1b894a1050e72f4aab4bcbea</rest_message_function><sys_class_name>sys_rest_message_fn_parameters</sys_class_name><sys_created_by>csa-jesse.szepieniec@bithawk.ch</sys_created_by><sys_created_on>2024-03-25 17:51:30</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>b7577f971b418a1050e72f4aab4bcb32</sys_id><sys_mod_count>1</sys_mod_count><sys_name>topP</sys_name><sys_package display_value="Azure Open AI" source="x_bits2_az_openai">99d309021bc50e5060fb1f81bb4bcbfb</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Azure Open AI">99d309021bc50e5060fb1f81bb4bcbfb</sys_scope><sys_update_name>sys_rest_message_fn_parameters_b7577f971b418a1050e72f4aab4bcb32</sys_update_name><sys_updated_by>csa-jesse.szepieniec@bithawk.ch</sys_updated_by><sys_updated_on>2024-03-25 17:52:57</sys_updated_on><type>string</type><value>0.95</value></sys_rest_message_fn_parameters></record_update>]]></payload>
+        <payload_hash>-2009715700</payload_hash>
+        <record_name>topP</record_name>
+        <reverted_from/>
+        <source>121faed71b894a1050e72f4aab4bcb85</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>csa-jesse.szepieniec@bithawk.ch</sys_created_by>
+        <sys_created_on>2024-03-25 17:52:57</sys_created_on>
+        <sys_id>cdb7b3d71b418a1050e72f4aab4bcba2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18e76be77d50000001</sys_recorded_at>
+        <sys_updated_by>csa-jesse.szepieniec@bithawk.ch</sys_updated_by>
+        <sys_updated_on>2024-03-25 17:52:57</sys_updated_on>
+        <type>Variable Substitutions</type>
+        <update_guid>05b7b3d7ad418a105f48759ee70e28a2</update_guid>
+        <update_guid_history>05b7b3d7ad418a105f48759ee70e28a2:-2009715700,3f577f9713418a10825c0559a974533f:579623351</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>csa-jesse.szepieniec@bithawk.ch</sys_created_by>
+        <sys_created_on>2024-03-26 05:15:44</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sys_rest_message_fn_parameters">sys_rest_message_fn_parameters</sys_db_object>
+        <sys_id>7b8bb08d2eef4dd1ad8c2589c9a68051</sys_id>
+        <sys_metadata>b7577f971b418a1050e72f4aab4bcb32</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>topP</sys_name>
+        <sys_package display_value="Azure Open AI" source="x_bits2_az_openai">99d309021bc50e5060fb1f81bb4bcbfb</sys_package>
+        <sys_parent display_value="Chat Completions">ad23fa9f1b894a1050e72f4aab4bcbea</sys_parent>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Azure Open AI">99d309021bc50e5060fb1f81bb4bcbfb</sys_scope>
+        <sys_scope_delete display_value="">5861b4c960334856b68a65bb178c16b9</sys_scope_delete>
+        <sys_update_name>sys_rest_message_fn_parameters_b7577f971b418a1050e72f4aab4bcb32</sys_update_name>
+        <sys_update_version display_value="sys_rest_message_fn_parameters_b7577f971b418a1050e72f4aab4bcb32">cdb7b3d71b418a1050e72f4aab4bcba2</sys_update_version>
+        <sys_updated_by>csa-jesse.szepieniec@bithawk.ch</sys_updated_by>
+        <sys_updated_on>2024-03-26 05:15:44</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

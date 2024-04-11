@@ -42,3 +42,15 @@ var openAI = new x_bits2_az_openai.AzureOpenAI();
 gs.info(openAI.prompt('hello world'));
 // output: Hello there! How can I assist you today?
 ```
+
+## Customization
+
+You can customize the behavior of the Azure OpenAI model by adjusting the parameters in the `AzureOpenAI` object, such as `MAX_TOKENS`, `TEMPERATURE`, `TOP_P`, etc., to fine-tune the AI's responses based on your requirements.
+
+## Contributing
+
+Contributions to this project are welcome! Please fork the repository and submit a pull request with your enhancements or fixes.
+
+## License
+
+This project is licensed under the MIT License.

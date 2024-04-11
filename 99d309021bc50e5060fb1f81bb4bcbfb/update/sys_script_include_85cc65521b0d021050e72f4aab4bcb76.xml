@@ -125,7 +125,7 @@ AzureOpenAI.prototype = {
         <sys_created_on>2024-03-22 05:12:09</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>85cc65521b0d021050e72f4aab4bcb76</sys_id>
-        <sys_mod_count>60</sys_mod_count>
+        <sys_mod_count>62</sys_mod_count>
         <sys_name>AzureOpenAI</sys_name>
         <sys_package display_value="Azure Open AI" source="x_bits2_az_openai">99d309021bc50e5060fb1f81bb4bcbfb</sys_package>
         <sys_policy>read</sys_policy>
@@ -133,6 +133,6 @@ AzureOpenAI.prototype = {
         <sys_scope display_value="Azure Open AI">99d309021bc50e5060fb1f81bb4bcbfb</sys_scope>
         <sys_update_name>sys_script_include_85cc65521b0d021050e72f4aab4bcb76</sys_update_name>
         <sys_updated_by>csa-jesse.szepieniec@bithawk.ch</sys_updated_by>
-        <sys_updated_on>2024-03-27 06:28:06</sys_updated_on>
+        <sys_updated_on>2024-04-10 14:49:16</sys_updated_on>
     </sys_script_include>
 </record_update>
